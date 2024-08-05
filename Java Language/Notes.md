@@ -48,28 +48,51 @@ for Database connectivity (JDBC)
 8. **double**: 64 bits
 
 
-### Creating Variables
-**Declaration**: `<type> <variableName>;`
-e.g. `int x;`
+## Variables
+**Declaration**: 
+```
+//<type> <variableName>;
+int x;
+```
 
-**Initialization**: `<variableName> = new <type>(<value>);`
-e.g. `x = new int(10):`
+**Initialization**: 
+```
+//<variableName> = new <type>(<value>);
+x = new int(10):
+```
 
-**Declaration and Allocation**: `int x = new int(10);`
+**Declaration and Allocation**: 
+```
+int x = new int(10);
+```
 
+## Arrays
+#### Declaration:
+```
+//<type> <arrayName>[];
+int x[];
+int x[][];
+```
 
-### Creating Arrays
-**Declaration**: `<type> <arrayName>[];`
-e.g. `int x[];`
+#### Memory Allocation: 
+```
+//<arrayName> = new <type>[<size>];
+x = new int[100]:
+x = new int[10][10]:
+```
 
-**Memory Allocation**: `<arrayName> = new <type>[<size>];`
-e.g. `x = new int[100]:`
+#### Declaration and Allocation: 
+```
+int x[] = new int[100];
+int x[][] = new int[10][10];
+```
 
-**Declaration and Allocation**: `int x[] = new int[100];`
+#### Initialization: 
+```
+int x[] = {12, 3, 9, 15};
+```
 
-**Initialization**: `int x[] = {12, 3, 9, 15};`
-
-**Multidimensional**:
+#### Multidimensional: 
 ```
 int x[][] = {{1, 2, 3}, {4, 5, 6}};
 int x[3][3] = {1, 2, 3, 4, 5, 6};
